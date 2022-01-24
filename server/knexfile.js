@@ -10,7 +10,7 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      host: "",
+      host: "127.0.0.1",
       database: "wherehouseDB",
       user: "root",
       password: "rootroot"
@@ -20,7 +20,7 @@ module.exports = {
   staging: {
     client: 'mysql',
     connection: {
-      host: "",
+      host: "127.0.0.1",
       database: "wherehouseDB",
       user: "root",
       password: "rootroot"
