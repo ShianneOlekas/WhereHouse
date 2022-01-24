@@ -3,21 +3,27 @@
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
+
+
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'mysql',
     connection: {
-      filename: './dev.sqlite3'
+      host: "",
+      database: "wherehouseDB",
+      user: "root",
+      password: "rootroot"
     }
   },
 
   staging: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      host: "",
+      database: "wherehouseDB",
+      user: "root",
+      password: "rootroot"
     },
     pool: {
       min: 2,
@@ -29,11 +35,11 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: "wherehouseDB",
+      user: "root",
+      password: "rootroot"
     },
     pool: {
       min: 2,
