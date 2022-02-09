@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "tables:create": "knex migrate:latest",
-    "tables:drop": "knex migrate:rollback"
+    "migrate": "knex migrate:latest",
+    "tables:drop": "knex migrate:rollback",
+    "seed": "knex seed:run"
   },
   "keywords": [],
   "author": "",
