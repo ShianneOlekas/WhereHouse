@@ -36,18 +36,7 @@ module.exports = {
 
   production: {
     client: 'mysql',
-    connection: {
-      database: "wherehouseDB",
-      user: "root",
-      password: "rootroot"
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
+    connection: process.env.JAWSDB_URL
   }
 
 };
